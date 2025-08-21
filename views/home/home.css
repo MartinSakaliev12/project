@@ -10,9 +10,11 @@ body{
     position: relative;
     top:0;
     padding: 1em;
+    
 }
 .navigation{
     display: flex;
+    flex-direction: row-reverse;
     gap: 2%;
     
 }
@@ -26,4 +28,39 @@ body{
 .text{
     font-size:1.5em;
     
+}
+/* For home */
+.posts-container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    width: 500px;
+    margin: 1em auto;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    border-radius:10px;
+    img{
+        width: 500px;
+    }
+    .interactions{
+        padding: 0 1em;
+        font-size: 1.5em;
+    }
+    .title{
+        font-size: 1.5em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0;
+        padding: 0 0.7em;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 1em 0.7em;
+    }
 }
