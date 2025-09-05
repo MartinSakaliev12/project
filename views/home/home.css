@@ -1,66 +1,115 @@
-body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
 }
-.header{
-    position: absolute;
-    background-color:blue;
-    position: relative;
-    top:0;
-    padding: 1em;
-    
-}
-.navigation{
+
+body {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 2%;
-    
-}
-.navigation li{
-    display: block;
+    flex-direction: row;
+    background-color: black;
     color: white;
+    letter-spacing: 0.05em;
+    font-family: 'Inter', sans-serif
 }
-.icon{
-    font-size: 2em;
+
+aside {
+    height: 100vh;
 }
-.text{
-    font-size:1.5em;
-    
-}
-/* For home */
-.posts-container{
-    display: flex;
-    flex-direction: column;
-    gap:1em;
-    width: 500px;
-    margin: 1em auto;
-}
-.post{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 500px;
-    height: auto;
-    border: 1px solid black;
-    border-radius:10px;
-    img{
-        width: 500px;
+
+.navigation {
+    padding: 3em 1em;
+    border-right: 1px solid rgba(37, 37, 39, 255);
+
+    .navigation-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
     }
-    .interactions{
-        padding: 0 1em;
-        font-size: 1.5em;
+
+    .control {
+        display: block;
+        font-size: 2.5em;
+        color: rgba(75, 77, 77, 255);
     }
-    .title{
-        font-size: 1.5em;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin: 0;
-        padding: 0 0.7em;
+
+    .home-control {
+        color: rgba(0, 120, 255, 255)
     }
-    p{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0;
-        padding: 1em 0.7em;
+}
+
+.main {
+    width: 100vw;
+
+    .posts-container {
+        width: 65%;
+        margin: 2em auto;
+
+
+        .post {
+            background-color: rgba(12, 12, 12, 255);
+            padding: 2em;
+            border-radius: 10px;
+            border: 1px solid rgba(35, 36, 36, 255);
+
+            .user {
+                padding-bottom: 1em;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5em;
+
+                .user-image {
+                    .profile-pic {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 60px;
+                    }
+                }
+
+                .user-data {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2em;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                img {
+                    height: 250px;
+                    border-radius: 10px;
+                }
+
+                .interations-container {
+                    .interactions-list {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5em;
+                        font-size: 2em;
+                        color: rgba(150, 153, 155, 255);
+
+                        li {
+                            display: flex;
+                            /* or block */
+                            width: 100px;
+                            /* or whatever size */
+                        }
+
+                        .interaction {
+                            display: flex;
+                            justify-content: center;
+                            p{
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

@@ -4,61 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Homapage</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="container-navigation">
-            <ul class="navigation">
-                <li class="icon"><i class="fa-solid fa-user"></i></li>
-                <li class="icon"><i class="fa-solid fa-comment"></i></li>
-                <li class="text">register</li>
-                <li class="text">login</li>
-                <li class="text">logout</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <aside class="navigation">
+        <ul class="navigation-controls">
+            <li class="control home-control"><i class="ri-home-line"></i></li>
+            <li class="control"><i class="ri-send-plane-fill"></i></li>
+            <li class="control"><i class="ri-notification-line"></i></li>
+            <li class="control"><i class="ri-user-line"></i></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <div class="search-conatiner">
+
+        </div>
         <div class="posts-container">
             <div class="post">
-                <img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863" alt="">
-                <div class="interactions">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-comments"></i>
+                <div class="user">
+                    <div class="user-image">
+                        <img class="profile-pic" src="https://i.pinimg.com/564x/15/12/3e/15123e5705f017bc3b74ede3680c608d.jpg" alt="user">
+                    </div>
+                    <div class="user-data">
+                        <p>Username</p>
+                        <p>2h</p>
+                    </div>
                 </div>
-                <p class="title">Title</p>
-                <p>Description</p>
-            </div>
-            <div class="post">
-                <img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863" alt="">
-                <div class="interactions">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-comments"></i>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, rerum?</p>
+                    <img src="https://i.pinimg.com/564x/15/12/3e/15123e5705f017bc3b74ede3680c608d.jpg" alt="text">
+                    <div class="interations-container">
+                        <ul class="interactions-list">
+                            <li><div class="interaction"><i class="ri-heart-3-line"></i><p>5</p></div></li>
+                            <li><div class="interaction"><i class="ri-chat-3-line"></i><p>55</p></div></li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="title">Title</p>
-                <p>Description</p>
             </div>
-            <div class="post">
-                <img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863" alt="">
-                <div class="interactions">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-comments"></i>
-                </div>
-                <p class="title">Title</p>
-                <p>Description</p>
-            </div>
-            <div class="post">
-                <img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863" alt="">
-                <div class="interactions">
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-comments"></i>
-                </div>
-                <p class="title">Title</p>
-                <p>Description</p>
-            </div>
+
         </div>
     </main>
-    <footer></footer>
 </body>
 </html>
