@@ -20,7 +20,7 @@ aside {
 .navigation {
     padding: 3em 1em;
     border-right: 1px solid rgba(37, 37, 39, 255);
-
+    position: fixed;
     .navigation-controls {
         display: flex;
         flex-direction: column;
@@ -40,6 +40,29 @@ aside {
 
 .main {
     width: 100vw;
+
+    .search-conatiner {
+        width: 65%;
+        margin: 2em auto;
+
+        .searchbar {
+            width: 55vw;
+            height: 7vh;
+            border-radius: 10px;
+            background-color: rgba(24, 25, 24, 255);
+            border: 1px solid rgba(36, 36, 36, 255);
+            padding: 1em;
+        }
+
+        .search-button {
+            height: 7.3vh;
+            width: 6.2vw;
+            border-radius: 10px;
+            background-color: rgba(0, 118, 255, 255);
+            color: white;
+            border: 1px solid rgba(36, 36, 36, 255);
+        }
+    }
 
     .posts-container {
         width: 65%;
@@ -103,7 +126,8 @@ aside {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            p{
+
+                            p {
                                 font-size: 0.7em;
                             }
                         }
@@ -112,5 +136,50 @@ aside {
             }
         }
 
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* заема цялата ширина */
+        min-height: 60px;
+        max-height: 75px;
+        /* или колкото е висока */
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        background-color: black;
+
+        .navigation-controls {
+            justify-content: center;
+            flex-direction: row;
+
+        }
+    }
+
+    .main {
+        .search-conatiner {
+            width: 90%;
+            height: 80%;
+
+            .searchbar {
+                width: 80%;
+            }
+
+            .search-button {
+                width: 18%;
+            }
+        }
+
+        .posts-container {
+            width: 90%;
+        }
     }
 }
