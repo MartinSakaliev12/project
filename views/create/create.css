@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    
+    background-color: black;
+    color: white;
+    letter-spacing: 0.05em;
+    font-family: 'Inter', sans-serif
+}
+
+aside {
+    height: 100vh;
+}
+
+.navigation {
+    padding: 3em 1em;
+    border-right: 1px solid rgba(37, 37, 39, 255);
+    position: fixed;
+    .navigation-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .control {
+        display: block;
+        font-size: 2.5em;
+        color: rgba(75, 77, 77, 255);
+    }
+
+    .home-control {
+        color: rgba(0, 120, 255, 255)
+    }
+    i:hover{
+        color:white;
+    }
+}
+
+.main {
+
+    .create-form{
+        position: relative;
+        left:45vw;
+        top:25vh;
+        display: flex;
+        gap:1em;
+        flex-direction: column;
+    }
+    
+}
+
+    
+
+@media(max-width:600px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        /* заема цялата ширина */
+        min-height: 60px;
+        max-height: 75px;
+        /* или колкото е висока */
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        background-color: black;
+
+        .navigation-controls {
+            justify-content: center;
+            flex-direction: row;
+
+        }
+    }
+
+    .main {
+        .search-conatiner {
+            width: 90%;
+            height: 80%;
+
+            .searchbar {
+                width: 80%;
+            }
+
+            .search-button {
+                width: 18%;
+            }
+        }
+
+        .posts-container {
+            width: 90%;
+        }
+    }
+}
