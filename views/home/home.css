@@ -72,7 +72,7 @@ aside {
             }
         }
         .search-button:hover{
-            border: 1px solid green;
+            border: 4px solid rgba(0, 118, 255, 255);
         }
     }
 
