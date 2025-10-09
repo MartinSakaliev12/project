@@ -36,6 +36,9 @@ aside {
     .home-control {
         color: rgba(0, 120, 255, 255)
     }
+    i:hover{
+        color:white;
+    }
 }
 
 .main {
@@ -67,6 +70,9 @@ aside {
             .search-icon{
                 font-size: 2em;
             }
+        }
+        .search-button:hover{
+            border: 1px solid green;
         }
     }
 
@@ -139,6 +145,9 @@ aside {
                             p {
                                 font-size: 0.7em;
                             }
+                        }
+                        .interaction:hover {
+                            color:white;
                         }
                     }
                 }
