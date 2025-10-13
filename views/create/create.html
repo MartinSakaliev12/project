@@ -16,15 +16,41 @@
             <li class="control"><i class="ri-send-plane-fill"></i></li>
             <li class="control"><i class="ri-notification-line"></i></li>
             <li class="control"><i class="ri-user-line"></i></li>
+            <li class="control" onClick="openMenu()"><i class="fa-solid fa-plus"></i></li>
         </ul>
     </aside>
     <main class="main">
-        <div class="create-container">
-            <form class="create-form">
-                <input type="text">
-                <input type="text">
-            </form>
+        <div class="create-container" id="create-container">
+            <div class="inner-create-container">
+
+                <button class ="btn-close" onClick="closeMenu()"><i class="fa-solid fa-xmark"></i></button>
+                <form >
+                    <textarea id="post-text" cols="40" placeholder="What's happening?"></textarea>
+                    <button class="btn-post">Post</button>
+                </form>
+                <div class="action">
+                    <i class="fa-solid fa-image"></i>
+                    <i class="ri-emoji-sticker-line"></i>
+                </div>
+            </div>
         </div>
     </main>
+      <script>
+    function openMenu() {
+
+      document.getElementById('create-container').style.display = 'flex';
+    }
+
+    function closeMenu() {
+      document.getElementById('create-container').style.display = 'none';
+    }
+  </script>
+  <script>
+  const textarea = document.getElementById('post-text');
+  textarea.addEventListener('input', () => {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + 'px';
+  });
+</script>
 </body>
 </html>
