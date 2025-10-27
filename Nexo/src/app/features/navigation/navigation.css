@@ -1,0 +1,23 @@
+.navigation {
+    padding: 3em 1em;
+    border-right: 1px solid rgba(37, 37, 39, 255);
+    position: fixed;
+    .navigation-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .control {
+        display: block;
+        font-size: 2.5em;
+        color: rgba(75, 77, 77, 255);
+    }
+
+    .home-control {
+        color: rgba(0, 120, 255, 255)
+    }
+    i:hover{
+        color:white;
+    }
+}
