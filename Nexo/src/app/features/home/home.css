@@ -1,0 +1,115 @@
+.main {
+    width: 100vw;
+
+    .search-conatiner {
+        display: flex;
+        gap: 1em;
+        width: 65%;
+        margin: 2em auto;
+        
+        .searchbar {
+            width: 55vw;
+            height: 7vh;
+            border-radius: 10px;
+            background-color: rgba(24, 25, 24, 255);
+            border: 1px solid rgba(36, 36, 36, 255);
+            padding: 1em;
+        }
+
+        .search-button {
+
+            height: 7vh;
+            width: 6.2vw;
+            border-radius: 10px;
+            background-color: rgba(0, 118, 255, 255);
+            color: white;
+            border: 1px solid rgba(36, 36, 36, 255);
+            .search-icon{
+                font-size: 2em;
+            }
+        }
+        .search-button:hover{
+            border: 4px solid rgba(0, 118, 255, 255);
+        }
+    }
+
+    .posts-container {
+        width: 65%;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        .post {
+            background-color: rgba(12, 12, 12, 255);
+            padding: 2em;
+            border-radius: 10px;
+            border: 1px solid rgba(35, 36, 36, 255);
+
+            .user {
+                padding-bottom: 1em;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5em;
+
+                .user-image {
+                    .profile-pic {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 60px;
+                    }
+                }
+
+                .user-data {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.2em;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                img {
+                    height: 300px;
+                    border-radius: 10px;
+                }
+
+                .interations-container {
+                    .interactions-list {
+                        padding-top: 1em;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5em;
+                        font-size: 2em;
+                        color: rgba(150, 153, 155, 255);
+
+                        li {
+                            display: flex;
+                            /* or block */
+                            width: 100px;
+                            /* or whatever size */
+                        }
+
+                        .interaction {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            p {
+                                font-size: 0.7em;
+                            }
+                        }
+                        .interaction:hover {
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
